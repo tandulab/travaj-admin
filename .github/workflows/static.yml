@@ -38,7 +38,10 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
-          custom_domain: backoffice.travaj.app
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          custom_domain: backoffice.travaj.it
+
