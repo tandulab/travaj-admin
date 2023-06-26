@@ -38,9 +38,7 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+          custom_domain: backoffice.travaj.app
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-      - name: Set custom url
-        with:
-          custom_domain: backoffice.travaj.app
