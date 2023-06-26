@@ -43,5 +43,5 @@ jobs:
         uses: actions/deploy-pages@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          custom_domain: backoffice.travaj.it
+          custom_domain: backoffice.travaj.app
 
