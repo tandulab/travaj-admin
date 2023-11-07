@@ -1,1 +1,0 @@
-import{y as r,B as e}from"../index67901.js";class s{static async fetchAll(){return(await r("/workareas")).data}}const c=e({id:"workarea",state:()=>({workarea:{},workareas:[]}),getters:{allWorkarea:a=>a.workareas},actions:{async fetchAllWorkarea(){await s.fetchAll().then(a=>this.workareas=a.workareas)}}});export{c as u};
